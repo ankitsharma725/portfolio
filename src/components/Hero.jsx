@@ -2,7 +2,6 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { Download, Send } from 'lucide-react';
-import { resume } from 'react-dom/server';
 
 const Hero = () => {
   return (
@@ -17,6 +16,7 @@ const Hero = () => {
         <h1 className="hero-title">
           Hi, I'm <span className="highlight">Ankit Sharma</span>
         </h1>
+
         <div className="hero-subtitle">
           <TypeAnimation
             sequence={[
@@ -36,14 +36,15 @@ const Hero = () => {
             repeat={Infinity}
           />
         </div>
+
         <div className="hero-buttons">
           <a href="#contact" className="btn btn-primary">
             <Send size={18} /> Hire Me
           </a>
-       {/* <a href="/ankit-resume.pdf" className="btn btn-secondary" download>
-  <Download size={18} /> Download CV
-</a> */}
 
+          <a href="/ankit-resume.pdf" className="btn btn-secondary" download>
+            <Download size={18} /> Download CV
+          </a>
         </div>
       </motion.div>
 
@@ -55,7 +56,7 @@ const Hero = () => {
       >
         <div className="image-container">
           <img 
-            src='/img/ankit.jpg' 
+            src="/img/ankit.jpg" 
             alt="Ankit Sharma" 
             className="profile-img"
           />
