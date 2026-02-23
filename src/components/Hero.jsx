@@ -40,9 +40,9 @@ const Hero = () => {
           <a href="#contact" className="btn btn-primary">
             <Send size={18} /> Hire Me
           </a>
-       <a href="/ankit-resume.pdf" className="btn btn-secondary" download>
+       {/* <a href="/ankit-resume.pdf" className="btn btn-secondary" download>
   <Download size={18} /> Download CV
-</a>
+</a> */}
 
         </div>
       </motion.div>
